@@ -1,0 +1,13 @@
+<% @page_title = "TicTacToe" %>
+<h1>Welcome to Tic-Tac-Toe</h1>
+
+<%= form_for(@newgame) do |f| %>
+	<div class="field">
+		Please enter your username?
+    	<%= f.label :user_name %><br />
+    	<%= f.text_field :user_name %>
+	</div>
+	<div class="actions">
+    	<%= f.submit %>
+  	</div>
+<% end %>
